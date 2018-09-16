@@ -6,5 +6,8 @@ target 'MarvelList' do
 pod 'Alamofire'
 pod 'ObjectMapper'
 pod 'AlamofireObjectMapper'
+pod 'CryptoSwift'
+pod 'Kingfisher', '~> 4.0'
+pod 'RealmSwift'
 
 end

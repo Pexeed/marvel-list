@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeComicCell" customModule="MarvelList" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeComicCell" id="gTV-IL-0wX" customClass="HomeComicCell" customModule="MarvelList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="157" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="157" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hr-Yz-4L9">
+                        <rect key="frame" x="6" y="6" width="145" height="197.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JPG-RV-grY">
+                        <rect key="frame" x="6" y="226" width="145" height="16"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Release Date">
+                                <attributes>
+                                    <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="13" name="HelveticaNeue-Italic"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgZ-gA-7uH">
+                        <rect key="frame" x="6" y="205.5" width="145" height="18.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="Title">
+                                <attributes>
+                                    <color key="NSColor" red="0.84313725490000002" green="0.14901960780000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="14" name="Futura-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="JPG-RV-grY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="2kb-pR-EPs"/>
+                <constraint firstItem="4hr-Yz-4L9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6pw-Nb-BWQ"/>
+                <constraint firstItem="JPG-RV-grY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MaC-x8-Htp"/>
+                <constraint firstItem="JPG-RV-grY" firstAttribute="top" secondItem="BgZ-gA-7uH" secondAttribute="bottom" constant="2" id="UE3-UC-IRR"/>
+                <constraint firstItem="BgZ-gA-7uH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="YAF-8b-MVS"/>
+                <constraint firstItem="4hr-Yz-4L9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="clG-PR-PWH"/>
+                <constraint firstAttribute="bottom" secondItem="JPG-RV-grY" secondAttribute="bottom" constant="6" id="e08-Eu-ogt"/>
+                <constraint firstAttribute="trailing" secondItem="BgZ-gA-7uH" secondAttribute="trailing" constant="6" id="ooS-VT-39G"/>
+                <constraint firstItem="BgZ-gA-7uH" firstAttribute="top" secondItem="4hr-Yz-4L9" secondAttribute="bottom" constant="2" id="qiu-2B-0TQ"/>
+                <constraint firstAttribute="trailing" secondItem="4hr-Yz-4L9" secondAttribute="trailing" constant="6" id="uZm-GZ-lzI"/>
+                <constraint firstItem="BgZ-gA-7uH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="uva-nd-Stt"/>
+                <constraint firstItem="4hr-Yz-4L9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="w3i-Sp-XQi"/>
+                <constraint firstAttribute="trailing" secondItem="JPG-RV-grY" secondAttribute="trailing" constant="6" id="xtA-Cl-ixY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="157" height="248"/>
+            <connections>
+                <outlet property="releaseDateLbl" destination="JPG-RV-grY" id="xPf-hC-E20"/>
+                <outlet property="thumbIV" destination="4hr-Yz-4L9" id="vUU-HI-eZs"/>
+                <outlet property="titleLbl" destination="BgZ-gA-7uH" id="NlD-Cg-oHn"/>
+            </connections>
+            <point key="canvasLocation" x="87.5" y="80"/>
+        </collectionViewCell>
+    </objects>
+</document>
